@@ -161,3 +161,6 @@ if exists('+colorcolumn')
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+"for vim-localvimrc
+let g:localvimrc_ask = 0
