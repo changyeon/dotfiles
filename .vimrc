@@ -29,6 +29,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'wakatime/vim-wakatime'
 Plug 'vim-scripts/sudo.vim'
+Plug 'embear/vim-localvimrc'
 
 " Initialize plugin system
 call plug#end()
