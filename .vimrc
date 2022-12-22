@@ -30,6 +30,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'wakatime/vim-wakatime'
 Plug 'vim-scripts/sudo.vim'
 Plug 'embear/vim-localvimrc'
+Plug 'guns/xterm-color-table.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -67,7 +68,7 @@ map <C-h> :bp<CR>
 let g:c_syntax_for_h = 1
 
 " YouCompleteMe
-"let g:ycm_show_diagnostics_ui = 0
+let g:ycm_show_diagnostics_ui = 0
 "let g:loaded_youcompleteme = 1
 let g:ycm_filter_diagnostics = {
   \ "c": {
