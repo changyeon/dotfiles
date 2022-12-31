@@ -6,14 +6,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-"Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-sleuth'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/FuzzyFinder'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'vim-scripts/autoload_cscope.vim'
+Plug 'vim-scripts/a.vim'
 Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'preservim/nerdcommenter'
-Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -22,7 +22,6 @@ Plug 'majutsushi/tagbar'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
-Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf'
 Plug 'nvie/vim-flake8'
 Plug 'rust-lang/rust.vim'
@@ -42,10 +41,10 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+"set tabstop=4
+"set softtabstop=4
+"set shiftwidth=4
+"set expandtab
 set nonumber
 set nowrap
 set t_Co=256
@@ -69,24 +68,6 @@ let g:c_syntax_for_h = 1
 
 " YouCompleteMe
 let g:ycm_show_diagnostics_ui = 0
-"let g:loaded_youcompleteme = 1
-let g:ycm_filter_diagnostics = {
-  \ "c": {
-  \   "regex": [
-  \     "-mno-fp-ret-in-387",
-  \     "-mpreferred-stack-boundary=3",
-  \     "-mskip-rax-setup",
-  \     "-mindirect-branch=thunk-extern",
-  \     "-mindirect-branch-register",
-  \     "-fno-allow-store-data-races",
-  \     "-fplugin-arg-structleak_plugin-byref-all",
-  \     "-fno-var-tracking-assignments",
-  \     "-fconserve-stack",
-  \     "-mrecord-mcount",
-  \     "-flive-patching=inline-clone"
-  \   ]
-  \ }
-  \}
 
 " Syntastic
 set statusline+=%#warningmsg#
