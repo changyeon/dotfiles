@@ -59,6 +59,7 @@ map <F2> :FufBuffer<CR>
 map <F3> :FufFile<CR>
 map <F4> :TagbarToggle<CR>
 map <F5> :NERDTreeToggle<CR>
+map <F6> :!cscope -Rb<CR>:cs reset<CR><CR>
 map <silent> <C-N> :silent noh<CR>
 map <C-l> :bn<CR>
 map <C-h> :bp<CR>
